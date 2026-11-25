@@ -1,0 +1,23 @@
+# secrets
+.env
+*.env
+!.env.example
+kaggle.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# scratch and bulky intermediates (generated outputs themselves ARE committed, so the run can be inspected)
+outputs/smoke/
+outputs/radio_cut/*.wav
+outputs/final/_work/
+outputs/shots/kaggle_bundle/
+outputs/shots/_import/
+outputs/music/kaggle_bundle/
+outputs/music/_import/
+outputs/keyframes/refs/small/
+*.zip
+.DS_Store
