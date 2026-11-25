@@ -1,0 +1,400 @@
+{
+  "version": "0.1.0",
+  "title": "The Letters She Cannot Read",
+  "logline": "A mother in a rural village who cannot read keeps every letter from her child in a tin box, until the child comes home and gives her a way to answer in her own voice.",
+  "audience": "Young Ethiopians living in cities or abroad whose parents live in the countryside and cannot read or write. They watch on a phone, vertically, in a social feed.",
+  "intent": "At the end they should feel tenderness toward a parent far away, and want to send their mother a voice message today.",
+  "language": {
+    "narration": "am",
+    "subtitles": "en"
+  },
+  "style_block": "warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame",
+  "negative_prompt": "text, letters, writing, words, watermark, logo, extra fingers, deformed hands, distorted face, photorealistic, harsh shadows, oversaturated",
+  "models": {
+    "script": {
+      "name": "gemini-3.8-flash",
+      "provider": "gemini_api"
+    },
+    "keyframes": {
+      "name": "@cf/black-forest-labs/flux-2-klein-4b",
+      "provider": "cloudflare_workers_ai",
+      "params": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "shots": {
+      "name": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "provider": "kaggle_t4x2",
+      "params": {
+        "width": 512,
+        "height": 512,
+        "num_frames": 121,
+        "fps": 24,
+        "num_inference_steps": 30,
+        "guidance_scale": 5.0,
+        "negative_prompt": "blurry, distorted face, extra fingers, flicker, text, watermark, fast motion"
+      }
+    },
+    "music": {
+      "name": "acestep-v15-turbo",
+      "provider": "kaggle_t4x2",
+      "params": {
+        "lm_model": "acestep-5Hz-lm-0.6B",
+        "inference_steps": 8,
+        "thinking": false
+      }
+    },
+    "narration": {
+      "name": "gemini-3.8-flash-tts",
+      "provider": "gemini_api"
+    }
+  },
+  "characters": [
+    {
+      "id": "mother",
+      "name": "Emaye (the mother)",
+      "description": "Ethiopian woman in her late fifties, warm dark brown skin, kind tired eyes, grey hair at the temples, white cotton netela shawl with a thin green-yellow-red woven border, long simple white dress",
+      "reference_prompt": "character reference sheet, three views side by side: front, three-quarter, profile, plus a close-up of her hands; Ethiopian woman in her late fifties, warm dark brown skin, kind tired eyes, grey hair at the temples, white cotton netela shawl with a thin green-yellow-red woven border, long simple white dress, plain light background",
+      "seed": 1101,
+      "show_face": true,
+      "real_person": false
+    },
+    {
+      "id": "selam",
+      "name": "Selam (the neighbour's daughter)",
+      "description": "Ethiopian girl about twelve years old, hair in neat cornrow plaits, faded blue school uniform, carries two exercise books, seen from behind or in profile",
+      "reference_prompt": "character reference sheet, back view and profile only: Ethiopian girl about twelve years old, hair in neat cornrow plaits, faded blue school uniform, holding two exercise books, plain light background",
+      "seed": 2202,
+      "show_face": false,
+      "real_person": false
+    },
+    {
+      "id": "child",
+      "name": "The narrator (grown child)",
+      "description": "young adult from the city, seen only from behind or as hands, dark green jacket, canvas travel bag over one shoulder",
+      "reference_prompt": "reference sheet, back view only and close-up of hands: young Ethiopian adult in a dark green jacket with a canvas travel bag over one shoulder, plain light background",
+      "seed": 3303,
+      "show_face": false,
+      "real_person": false
+    }
+  ],
+  "narration_settings": {
+    "voice": "Kore",
+    "style_instruction": "Speak in Amharic, calm, warm and unhurried, like telling a family story softly in the evening. Leave a short pause between sentences.",
+    "words_per_second_estimate": 1.6
+  },
+  "music": {
+    "candidates": 3,
+    "chosen_candidate": null,
+    "cues": [
+      {
+        "id": "cue_waiting",
+        "start_shot": "s01",
+        "end_shot": "s08",
+        "caption": "instrumental, gentle Ethiopian masinko and soft krar, sparse fingerpicked texture, warm low drone, quiet and patient, intimate, no strong lead melody, nostalgic",
+        "bpm": 68,
+        "key": "C minor",
+        "instrumental": true,
+        "purpose": "Carry the patience and loneliness of waiting without competing with the voice.",
+        "seed": 4401
+      },
+      {
+        "id": "cue_return",
+        "start_shot": "s09",
+        "end_shot": "s11",
+        "caption": "instrumental, masinko melody returns over soft krar and light kebero hand drum, warm and hopeful, gentle lift, tender resolution",
+        "bpm": 72,
+        "key": "C minor",
+        "instrumental": true,
+        "purpose": "Lift gently at the return and resolve warmly into the end card.",
+        "seed": 4402
+      }
+    ],
+    "ducking": {
+      "threshold": 0.02,
+      "ratio": 6,
+      "attack_ms": 300,
+      "release_ms": 1500
+    },
+    "chosen_reason": ""
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "duration_s": 7,
+      "shot_size": "extreme_wide",
+      "reason": "Establish the village and the warka tree where news arrives.",
+      "characters": [],
+      "keyframe": {
+        "prompt": "extreme wide shot at early morning, small Ethiopian highland village of round thatched tukuls on green hills, one huge old warka fig tree beside a winding dirt path, thin smoke rising from a hut, soft mist in the valley",
+        "seed": 10001
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "mist drifts slowly through the valley, smoke rises gently, leaves of the tree move slightly, camera slowly pans right",
+        "seed": 20001
+      },
+      "narration": {
+        "text": "በእናቴ መንደር፣ ዜና የሚደርስበት አንድ ትልቅ ዋርካ አለ።",
+        "subtitle_en": "In my mother's village, there is one big tree where news arrives."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s02",
+      "duration_s": 7,
+      "shot_size": "medium",
+      "reason": "Introduce the mother and the problem: she cannot read.",
+      "characters": [
+        "mother"
+      ],
+      "keyframe": {
+        "prompt": "medium shot, the mother standing in the wooden doorway of her tukul, holding a folded paper envelope in both hands, looking down at it, morning light on her face",
+        "seed": 10002
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "she looks down at the envelope and breathes slowly, shawl moves slightly in the wind, fixed camera",
+        "seed": 20002
+      },
+      "narration": {
+        "text": "እናቴ ትምህርት ቤት ሄዳ አታውቅም። አንድም ቃል ማንበብ አትችልም።",
+        "subtitle_en": "My mother never went to school. She cannot read a single word."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s03",
+      "duration_s": 6,
+      "shot_size": "close_up",
+      "reason": "Show how precious the letters are through her hands.",
+      "characters": [
+        "mother"
+      ],
+      "keyframe": {
+        "prompt": "close-up of the mother's weathered hands gently holding a folded paper envelope against the white netela shawl, soft warm light",
+        "seed": 10003
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "hands slowly turn the envelope over, fixed camera",
+        "seed": 20003
+      },
+      "narration": {
+        "text": "ግን የምልክላትን እያንዳንዱን ደብዳቤ እንደ ወርቅ ትይዘዋለች።",
+        "subtitle_en": "But every letter I send, she holds like it is gold."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s04",
+      "duration_s": 8,
+      "shot_size": "wide",
+      "reason": "Introduce Selam and the ritual place under the tree.",
+      "characters": [
+        "mother",
+        "selam"
+      ],
+      "keyframe": {
+        "prompt": "wide shot, the mother walking along the dirt path toward the huge warka tree, the girl Selam sitting on a stone under the tree seen from behind with exercise books on her lap, dappled sunlight",
+        "seed": 10004
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "the mother walks slowly toward the tree, leaves sway gently, fixed camera",
+        "seed": 20004
+      },
+      "narration": {
+        "text": "ስለዚህ ወደ ዋርካው ሄዳ የጎረቤታችንን ልጅ ሰላምን ትጠብቃለች።",
+        "subtitle_en": "So she walks to the tree and waits for Selam, the neighbour's daughter.",
+        "pronunciation_notes": "ሰላም = Se-lam, stress on second syllable"
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s05",
+      "duration_s": 7,
+      "shot_size": "medium",
+      "reason": "Show the reading ritual that connects mother and child.",
+      "characters": [
+        "mother",
+        "selam"
+      ],
+      "keyframe": {
+        "prompt": "medium shot under the warka tree, Selam in profile holding an open folded letter and reading aloud, the mother sitting beside her listening, dappled shade, the letter shows no readable writing",
+        "seed": 10005
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "the girl reads, her lips move slightly, leaves cast moving shadows, fixed camera",
+        "seed": 20005
+      },
+      "narration": {
+        "text": "ሰላም ቃሎቼን ቀስ ብላ፣ ሁለት ጊዜ ጮክ ብላ ታነብላታለች።",
+        "subtitle_en": "Selam reads my words out loud, slowly, twice."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s06",
+      "duration_s": 8,
+      "shot_size": "close_up",
+      "reason": "The emotional centre: she hears her child through someone else's voice.",
+      "characters": [
+        "mother"
+      ],
+      "keyframe": {
+        "prompt": "close-up of the mother's face under the tree, eyes closed, a small gentle smile, dappled light on her cheek, white netela over her hair",
+        "seed": 10006
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "she breathes slowly with a faint smile, light flickers softly through leaves, camera pushes in gently",
+        "seed": 20006
+      },
+      "narration": {
+        "text": "እናቴ እኔ ራሴ የምናገር ይመስል አይኖቿን ጨፍና ታዳምጣለች።",
+        "subtitle_en": "My mother listens with her eyes closed, as if I am the one speaking."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s07",
+      "duration_s": 7,
+      "shot_size": "close_up",
+      "reason": "Reveal the tin box, the motif that returns at the end.",
+      "characters": [
+        "mother"
+      ],
+      "keyframe": {
+        "prompt": "close-up inside a dim tukul, the mother's hands opening an old dented tin box filled with many folded letters tied with string, warm light from the doorway",
+        "seed": 10007
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "the lid of the tin box opens slowly, fixed camera",
+        "seed": 20007
+      },
+      "narration": {
+        "text": "እያንዳንዱን ደብዳቤ በዚህ ሳጥን ውስጥ ታስቀምጣለች። የአስራ ሁለት ዓመት ደብዳቤዎች።",
+        "subtitle_en": "She keeps every letter in this box. Twelve years of them."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s08",
+      "duration_s": 8,
+      "shot_size": "medium",
+      "reason": "The turning point: her love could only travel one way.",
+      "characters": [
+        "mother"
+      ],
+      "keyframe": {
+        "prompt": "medium shot at night inside the tukul, the mother sitting alone on a low stool beside a small kerosene lamp, the closed tin box on her lap, warm orange lamplight and deep shadows",
+        "seed": 10008
+      },
+      "motion": {
+        "mode": "ken_burns",
+        "prompt": "slow zoom in on the mother and the box",
+        "ken_burns": {
+          "direction": "zoom_in",
+          "amount": 0.12
+        }
+      },
+      "narration": {
+        "text": "ግን መልስ መጻፍ አትችልም ነበር። ደብዳቤዎቼ የሚሄዱት በአንድ መንገድ ብቻ ነበር።",
+        "subtitle_en": "But she could never write back. My letters only travelled one way."
+      },
+      "music_cue": "cue_waiting"
+    },
+    {
+      "id": "s09",
+      "duration_s": 6,
+      "shot_size": "wide",
+      "reason": "The return: the child finally comes home.",
+      "characters": [
+        "child"
+      ],
+      "keyframe": {
+        "prompt": "wide shot at golden sunset, the grown child seen from behind walking up the winding dirt path toward the village and the warka tree, canvas bag over one shoulder, long shadows",
+        "seed": 10009
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "the figure walks slowly away from camera up the path, grass sways, fixed camera",
+        "seed": 20009
+      },
+      "narration": {
+        "text": "ዘንድሮ፣ አዲስ ነገር ይዤ ወደ ቤት መጣሁ።",
+        "subtitle_en": "This year, I came home with something new."
+      },
+      "music_cue": "cue_return"
+    },
+    {
+      "id": "s10",
+      "duration_s": 7,
+      "shot_size": "extreme_close_up",
+      "reason": "The solution: one button gives her a voice.",
+      "characters": [
+        "mother",
+        "child"
+      ],
+      "keyframe": {
+        "prompt": "extreme close-up of the mother's finger pressing a glowing button on a simple mobile phone screen, a younger hand gently guiding hers, the screen shows only a round microphone icon and no text, warm light",
+        "seed": 10010
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "the finger presses and holds the button, the younger hand slowly lets go, fixed camera",
+        "seed": 20010
+      },
+      "narration": {
+        "text": "አንድ ቁልፍ አሳየኋት። ተጫኚ፣ ተናገሪ፣ ልቀቂ።",
+        "subtitle_en": "I showed her one button. Press, speak, let go."
+      },
+      "music_cue": "cue_return"
+    },
+    {
+      "id": "s11",
+      "duration_s": 9,
+      "shot_size": "close_up",
+      "reason": "Payoff: the phone joins the letters, and now her voice travels back.",
+      "characters": [
+        "mother"
+      ],
+      "keyframe": {
+        "prompt": "close-up of the open tin box full of folded letters, the mother's hands gently placing a simple mobile phone on top of the letters, soft morning light",
+        "seed": 10011
+      },
+      "motion": {
+        "mode": "i2v",
+        "prompt": "hands slowly lower the phone onto the letters and withdraw, fixed camera",
+        "seed": 20011
+      },
+      "narration": {
+        "text": "አሁን በየጠዋቱ ድምጿን እሰማለሁ፦ «ልጄ፣ ደህና ነኝ። አንተስ?»",
+        "subtitle_en": "Now, every morning, I hear her voice: \"My child, I am well. And you?\"",
+        "pronunciation_notes": "ልጄ = li-jé. Use አንቺስ instead of አንተስ if the narrator is a daughter."
+      },
+      "music_cue": "cue_return"
+    }
+  ],
+  "end_card": {
+    "text": "Made with AI · A story inspired by mothers in rural Ethiopia",
+    "duration_s": 3
+  },
+  "export": {
+    "aspect_ratios": [
+      "9:16",
+      "16:9"
+    ],
+    "fps": 24,
+    "draft_resolution": "480p",
+    "final_resolution": "720p",
+    "loudness_lufs": -14,
+    "true_peak_db": -1,
+    "min_total_s": 60,
+    "max_total_s": 90
+  }
+}
