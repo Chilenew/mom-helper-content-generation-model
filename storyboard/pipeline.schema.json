@@ -310,6 +310,47 @@
         "chosen_reason": {
           "type": "string",
           "description": "Why this candidate was chosen; mirror it in EXPERIMENTS.md."
+        },
+        "track": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "file",
+            "licence"
+          ],
+          "description": "A licensed recording used as the score when no ACE-Step candidate is chosen.",
+          "properties": {
+            "file": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "composer": {
+              "type": "string"
+            },
+            "performer": {
+              "type": "string"
+            },
+            "licence": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "start_s": {
+              "type": "number"
+            },
+            "fade_in_s": {
+              "type": "number"
+            },
+            "fade_out_s": {
+              "type": "number"
+            },
+            "gain_db": {
+              "type": "number"
+            }
+          }
         }
       }
     },

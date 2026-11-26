@@ -36,6 +36,9 @@ Several free endpoints may use submitted content to improve their models. The pr
 | Wan 2.2 TI2V-5B (Wan-AI) | moving shots | Apache 2.0 | yes | |
 | ACE-Step 1.5 (ACE Studio) | score | open weights; per the challenge brief, outputs may be used commercially _(verify the repo licence)_ | yes | |
 | FFmpeg | assembly | LGPL/GPL | n/a (tool) | |
+| Satie, *Gymnopédie No. 1*, performed by Robin Alciatore ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg)) | score (current) | composition and recording both marked **public domain** on Commons | yes; credit is not required but is good practice | 2026-11-26 |
+| Microsoft neural voices `am-ET-AmehaNeural`, `en-KE-ChilembaNeural` via the `edge-tts` library | narration (current) | Edge read-aloud service used **without an official licence** | **not cleared for public release**: replace with a licensed TTS service or a real recording | 2026-11-26 |
+| Ebrima (Microsoft, ships with Windows) | Amharic subtitles, end card | Windows font licence: may be embedded in rendered video | yes | 2026-11-26 |
 | DejaVu Sans | subtitles, end card | free font licence (Bitstream Vera derivative) | yes | |
 | This repository's code | everything | MIT | — | |
 

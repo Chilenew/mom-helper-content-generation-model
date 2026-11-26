@@ -1,9 +1,10 @@
 {
   "storyboard_version": "0.2.1",
   "narration": "en",
+  "subtitles": "en",
   "loudness": {
-    "measured_input_i": -23.7,
-    "measured_input_tp": -7.35
+    "measured_input_i": -22.82,
+    "measured_input_tp": -7.57
   },
   "sources": {
     "shot_01": {

@@ -1,8 +1,14 @@
 {
-  "input_hash": "f19ad6c44dd68b82",
+  "input_hash": "49a877f01de87dfa",
   "inputs": {
-    "fallback": "placeholder",
-    "film_s": 88.0
+    "track": "419e376568562242",
+    "start_s": 2.2,
+    "film_s": 88.0,
+    "fades": [
+      2,
+      4
+    ],
+    "gain_db": 0
   },
-  "written_at": "2026-11-26T08:53:57.452800+00:00"
+  "written_at": "2026-11-26T15:34:25.116297+00:00"
 }

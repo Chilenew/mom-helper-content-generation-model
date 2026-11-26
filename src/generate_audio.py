@@ -37,7 +37,7 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (MUSIC_DIR, NARRATION_DIR, NARRATION_EN_DIR, OUTPUT, RUNS_LOG, SUBTITLES_DIR, cache_valid,  # noqa: E402
+from common import (MUSIC_DIR, NARRATION_DIR, NARRATION_EN_DIR, OUTPUT, ROOT, RUNS_LOG, SUBTITLES_DIR, cache_valid,  # noqa: E402
                     ffprobe_duration, file_hash, filter_path, input_hash, load_env, load_storyboard, rel,
                     require_env, run_ffmpeg, save_storyboard, shot_timeline, with_retries, write_cache_meta)
 from media import (build_voice_track, end_card_drawtext, mix, placeholder_music,  # noqa: E402
@@ -341,6 +341,21 @@ def cmd_music_build(args, sb):
     k = sb["music"].get("chosen_candidate")
     wins = cue_windows(sb)
     files = [CAND_DIR / f"{cue['id']}_c{k}.wav" for cue, _, _ in wins] if k is not None else []
+    track = sb["music"].get("track")
+    if (k is None or not all(f.exists() for f in files)) and track and (ROOT / track["file"]).exists():
+        # A licensed recording (e.g. public-domain classical): used from start_s, faded in and out.
+        src = ROOT / track["file"]
+        start, fade_in, fade_out = track.get("start_s", 0), track.get("fade_in_s", 2), track.get("fade_out_s", 4)
+        inputs = {"track": file_hash(src), "start_s": start, "film_s": film_s, "fades": [fade_in, fade_out],
+                  "gain_db": track.get("gain_db", 0)}
+        if not cache_valid(out, input_hash(inputs)):
+            run_ffmpeg(["-ss", start, "-i", src, "-t", film_s, "-af",
+                        f"volume={track.get('gain_db', 0)}dB,afade=t=in:d={fade_in},"
+                        f"afade=t=out:st={film_s - fade_out:.3f}:d={fade_out}",
+                        "-ar", "48000", "-ac", "2", out])
+            write_cache_meta(out, input_hash(inputs), inputs)
+        print(f"music: {track.get('title', src.name)} ({track.get('licence', 'licence?')}) -> {rel(out)}")
+        return
     if k is None or not all(f.exists() for f in files):
         inputs = {"fallback": "placeholder", "film_s": film_s}
         if not cache_valid(out, input_hash(inputs)):
