@@ -1,0 +1,15 @@
+{
+  "input_hash": "ef215aa7e0b23bd9",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "An Ethiopian rural mother walking across steep countryside hills and valleys, carrying everyday belongings, determined expression, expansive landscape, authentic rural environment, cinematic documentary realism.. Enat: Ethiopian Habesha woman in her late forties with a deep dark brown complexion, sun-weathered dark skin from years of outdoor work, East African facial features, strong weathered hands, kind steady eyes, white cotton netela shawl with a thin woven border draped over her hair and shoulders, simple long dress in muted earth tones. Reference images: image 0 shows Enat; keep each person's face, clothing and colours identical. Each person appears exactly once; one single scene, not a collage or reference sheet. Style: Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment, Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas, Natural warm lighting with earthy colors. No text, letters or writing anywhere in the image.",
+    "seed": 10004,
+    "w": 1024,
+    "h": 1024,
+    "refs": [
+      "0ed9e4f59c2f66da"
+    ],
+    "dry": false
+  },
+  "written_at": "2026-11-26T14:55:12.938506+00:00"
+}

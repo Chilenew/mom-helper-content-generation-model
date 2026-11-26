@@ -1,0 +1,14 @@
+{
+  "input_hash": "410f36014aa8aeae",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "The love she gave me, her advice, the hope she gave me, her calm… all of it lives in my heart as a precious memory.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:04.150622+00:00"
+}

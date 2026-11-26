@@ -1,7 +1,7 @@
 """ACE-Step 1.5 score candidates on Kaggle (GPU T4). Run in a notebook cell:
     !python /kaggle/input/<your-code-dataset>/ace_step_music.py
 
-Inputs : the dataset made from outputs/music/kaggle_bundle.zip (jobs.json), attached to the notebook
+Inputs : the dataset made from audio/music/kaggle_bundle.zip (jobs.json), attached to the notebook
 Outputs: /kaggle/working/music_output/<cue>_c<k>.wav + kaggle_runs.jsonl, zipped to music_output.zip
 
 Notebook settings: Accelerator = GPU T4 x2 (one GPU is used), Internet = On.
@@ -38,7 +38,7 @@ def main():
 
     hits = glob.glob("/kaggle/input/**/jobs.json", recursive=True)
     if not hits:
-        sys.exit("jobs.json not found: attach the dataset made from outputs/music/kaggle_bundle.zip")
+        sys.exit("jobs.json not found: attach the dataset made from audio/music/kaggle_bundle.zip")
     spec = json.load(open(hits[0]))
     mparams = spec.get("params", {})
     os.makedirs(OUT, exist_ok=True)
@@ -88,14 +88,14 @@ def main():
                        "lm": llm is not None},
             "seed": job["seed"], "latency_s": round(latency, 3), "gpu_minutes": round(latency / 60, 2),
             "cost_usd": 0.0, "status": status, "attempt": 1,
-            "output": f"outputs/music/candidates/{job['out_name']}.wav" if status == "ok" else None,
+            "output": f"audio/music/candidates/{job['out_name']}.wav" if status == "ok" else None,
             "error": error}) + "\n")
         log.flush()
         print(f"{job['out_name']}: {status} in {latency:.0f}s {error or ''}", flush=True)
     log.close()
     subprocess.run(["zip", "-qrj", "/kaggle/working/music_output.zip", OUT], check=True)
     print("done: download /kaggle/working/music_output.zip, then:\n"
-          "  python pipeline/music.py import --from music_output.zip")
+          "  python src/generate_audio.py music import --from music_output.zip")
 
 
 if __name__ == "__main__":

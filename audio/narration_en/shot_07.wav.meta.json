@@ -1,0 +1,14 @@
+{
+  "input_hash": "51b6f2ffa2e89acf",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "So that I could study from grade 1 to grade 12, and go on to university,",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:10.923462+00:00"
+}

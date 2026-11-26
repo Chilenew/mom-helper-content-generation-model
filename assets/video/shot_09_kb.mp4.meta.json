@@ -1,0 +1,12 @@
+{
+  "input_hash": "6f19ed349046a7bc",
+  "inputs": {
+    "keyframe": "f1cb215b2211d400",
+    "direction": "zoom_in",
+    "amount": 0.1,
+    "duration": 8,
+    "fps": 24,
+    "size": 1080
+  },
+  "written_at": "2026-11-26T14:56:19.202600+00:00"
+}

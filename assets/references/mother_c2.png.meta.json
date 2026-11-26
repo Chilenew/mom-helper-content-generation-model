@@ -1,0 +1,12 @@
+{
+  "input_hash": "06e20e6ad42a07fc",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "single full-length portrait photograph, front view, one person only; Ethiopian Habesha woman in her late forties with a deep dark brown complexion, the same dark skin tone as her son, sun-weathered dark skin from years of outdoor work, East African facial features, strong weathered hands, kind steady eyes, white cotton netela shawl with a thin woven border draped over her hair and shoulders, simple long dress in muted earth tones, standing in a rural Ethiopian village, natural warm light. Style: Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment, Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas, Natural warm lighting with earthy colors. No text or labels.",
+    "seed": 1303,
+    "w": 1024,
+    "h": 1024,
+    "dry": false
+  },
+  "written_at": "2026-11-26T09:47:39.181748+00:00"
+}

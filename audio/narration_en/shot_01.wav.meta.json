@@ -1,0 +1,14 @@
+{
+  "input_hash": "0644e4f4fd2af711",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "My strong mother…",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:03:59.717287+00:00"
+}

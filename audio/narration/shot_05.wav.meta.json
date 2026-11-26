@@ -1,0 +1,16 @@
+{
+  "input_hash": "c5d879d8834251eb",
+  "inputs": {
+    "model": "edge-tts",
+    "voice": "am-ET-AmehaNeural",
+    "style": "Gemini only (unused with Azure): warm, tender and unhurried, like a grown child paying tribute to their mother. Azure pacing is set by models.narration.params.",
+    "text": "የወንድ ሥራ የሴት ሥራ ብላ ሳትለይ፣ ሁሉንም ሥራ በትጋት ትሠራ ነበር።",
+    "dry_run": false,
+    "provider": "edge_tts",
+    "params": {
+      "rate": "-12%",
+      "pitch": "+0Hz"
+    }
+  },
+  "written_at": "2026-11-26T14:52:31.707655+00:00"
+}

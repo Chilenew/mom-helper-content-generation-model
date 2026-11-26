@@ -1,0 +1,14 @@
+{
+  "input_hash": "90a21827a0beb487",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "She never divided work into men's work and women's work. She did it all, tirelessly.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:07.757689+00:00"
+}

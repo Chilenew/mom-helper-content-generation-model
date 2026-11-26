@@ -1,0 +1,13 @@
+{
+  "input_hash": "75052db70cf5bffe",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "A wide cinematic view of a rural Ethiopian village at sunrise, traditional houses, distant green hills, warm golden morning light, peaceful atmosphere, documentary realism, natural earthy colors.. Style: Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment, Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas, Natural warm lighting with earthy colors. No text, letters or writing anywhere in the image.",
+    "seed": 10001,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": false
+  },
+  "written_at": "2026-11-26T09:12:34.203902+00:00"
+}

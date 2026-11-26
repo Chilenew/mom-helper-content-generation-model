@@ -1,0 +1,16 @@
+{
+  "input_hash": "56110b47a9c79f26",
+  "inputs": {
+    "model": "edge-tts",
+    "voice": "am-ET-AmehaNeural",
+    "style": "Gemini only (unused with Azure): warm, tender and unhurried, like a grown child paying tribute to their mother. Azure pacing is set by models.narration.params.",
+    "text": "ከ1ኛ እስከ 12ኛ ክፍል ድረስ እንድማር፣ የዩኒቨርሲቲ ትምህርቴን እንድቀጥል፣",
+    "dry_run": false,
+    "provider": "edge_tts",
+    "params": {
+      "rate": "-12%",
+      "pitch": "+0Hz"
+    }
+  },
+  "written_at": "2026-11-26T14:52:38.352519+00:00"
+}

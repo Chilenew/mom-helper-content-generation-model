@@ -1,0 +1,16 @@
+{
+  "input_hash": "aa201ea68864f354",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "An Ethiopian university graduate holding a graduation certificate while standing proudly beside their mother, authentic family setting, natural expressions, warm golden light, emotional cinematic realism.. Enat: Ethiopian Habesha woman in her late forties with a deep dark brown complexion, sun-weathered dark skin from years of outdoor work, East African facial features, strong weathered hands, kind steady eyes, white cotton netela shawl with a thin woven border draped over her hair and shoulders, simple long dress in muted earth tones. The child: Ethiopian Habesha young man in his mid twenties, dark brown skin, East African facial features, short tightly coiled black hair, slim build, neat white shirt and dark trousers. Reference images: image 0 shows Enat, image 1 shows The child; keep each person's face, clothing and colours identical. Each person appears exactly once; one single scene, not a collage or reference sheet. Style: Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment, Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas, Natural warm lighting with earthy colors. No text, letters or writing anywhere in the image.",
+    "seed": 10008,
+    "w": 1024,
+    "h": 1024,
+    "refs": [
+      "0ed9e4f59c2f66da",
+      "91a3de80fbc08ccc"
+    ],
+    "dry": false
+  },
+  "written_at": "2026-11-26T14:55:38.474352+00:00"
+}

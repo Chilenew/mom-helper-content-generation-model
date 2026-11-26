@@ -1,0 +1,14 @@
+{
+  "input_hash": "b5e985bd6a13963f",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "My strong mother, always up before dawn. Everything she did for us will never leave my heart.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:02.037330+00:00"
+}

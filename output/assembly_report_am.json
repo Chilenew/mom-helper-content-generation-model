@@ -1,0 +1,73 @@
+{
+  "storyboard_version": "0.2.1",
+  "narration": "am",
+  "subtitles": "am",
+  "loudness": {
+    "measured_input_i": -25.96,
+    "measured_input_tp": -10.27
+  },
+  "sources": {
+    "shot_01": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_01_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_02": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_02_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_03": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_03_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_04": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_04_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_05": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_05_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_06": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_06_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_07": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_07_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_08": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_08_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_09": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_09_kb.mp4",
+      "fallback_for_i2v": true
+    },
+    "shot_10": {
+      "source": "ken_burns",
+      "path": "assets\\video\\shot_10_kb.mp4",
+      "fallback_for_i2v": true
+    }
+  },
+  "outputs": {
+    "9:16": {
+      "path": "output\\film_vertical_am.mp4",
+      "duration_s": 88.0,
+      "within_limits": true
+    },
+    "16:9": {
+      "path": "output\\film_horizontal_am.mp4",
+      "duration_s": 88.0,
+      "within_limits": true
+    }
+  }
+}

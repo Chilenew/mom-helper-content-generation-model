@@ -24,11 +24,11 @@ jobs:
         run: |
           if git ls-files | grep -E '(^|/)\.env$|kaggle\.json$'; then echo "secret file committed"; exit 1; fi
       - name: Validate storyboard
-        run: python pipeline/validate.py
+        run: python src/pipeline.py validate
       - name: Unit tests
         run: python -m pytest -q tests
       - name: Dry-run film in a scratch copy
         run: |
           rsync -a --exclude .git ./ /tmp/scratch/ && cd /tmp/scratch
-          rm -rf outputs && make film-dry
-          ls -la outputs/final
+          rm -rf audio assets/images assets/video output && python src/pipeline.py film --dry-run
+          ls -la output

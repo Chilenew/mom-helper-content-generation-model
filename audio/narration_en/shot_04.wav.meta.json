@@ -1,0 +1,14 @@
+{
+  "input_hash": "a7028daa2181d510",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "To raise me and send me to school, there was no slope she did not go down, no hill she did not climb.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:06.158201+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "input_hash": "6073774bcf6dec20",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "single full-length portrait photograph, front view, one person only; Ethiopian Habesha boy about seven years old, dark brown skin, East African facial features, short tightly coiled black hair, simple faded khaki school clothes, standing in a rural Ethiopian village, natural warm light. Style: Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment, Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas, Natural warm lighting with earthy colors. No text or labels.",
+    "seed": 2205,
+    "w": 1024,
+    "h": 1024,
+    "dry": false
+  },
+  "written_at": "2026-11-26T09:43:43.606634+00:00"
+}

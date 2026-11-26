@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,DejaVu Sans,32,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,1,2,20,20,217,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:05.70,Default,,0,0,0,,In my mother's village, there is one big\Ntree where news arrives.
+Dialogue: 0,0:00:07.40,0:00:13.32,Default,,0,0,0,,My mother never went to school. She\Ncannot read a single word.
+Dialogue: 0,0:00:14.40,0:00:19.08,Default,,0,0,0,,But every letter I send, she holds like\Nit is gold.
+Dialogue: 0,0:00:20.40,0:00:25.70,Default,,0,0,0,,So she walks to the tree and waits for\NSelam, the neighbour's daughter.
+Dialogue: 0,0:00:28.40,0:00:34.32,Default,,0,0,0,,Selam reads my words out loud, slowly,\Ntwice.
+Dialogue: 0,0:00:35.40,0:00:40.70,Default,,0,0,0,,My mother listens with her eyes closed,\Nas if I am the one speaking.
+Dialogue: 0,0:00:43.40,0:00:49.90,Default,,0,0,0,,She keeps every letter in this box.\NTwelve years of them.
+Dialogue: 0,0:00:50.40,0:00:57.58,Default,,0,0,0,,But she could never write back. My\Nletters only travelled one way.
+Dialogue: 0,0:00:58.40,0:01:03.08,Default,,0,0,0,,This year, I came home with something\Nnew.
+Dialogue: 0,0:01:04.40,0:01:08.45,Default,,0,0,0,,I showed her one button. Press, speak,\Nlet go.
+Dialogue: 0,0:01:11.40,0:01:16.70,Default,,0,0,0,,Now, every morning, I hear her voice:\N"My child, I am well. And you?"

@@ -1,0 +1,11 @@
+{
+  "input_hash": "4c490f644d0008c1",
+  "inputs": {
+    "model": "gemini-3.8-flash-tts",
+    "voice": "Kore",
+    "style": "Speak in Amharic, calm, warm and unhurried, like telling a family story softly in the evening. Leave a short pause between sentences.",
+    "text": "አንድ ቁልፍ አሳየኋት። ተጫኚ፣ ተናገሪ፣ ልቀቂ።",
+    "dry_run": true
+  },
+  "written_at": "2026-11-25T12:40:46.220224+00:00"
+}

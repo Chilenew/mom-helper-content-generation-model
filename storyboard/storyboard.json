@@ -1,0 +1,116 @@
+{
+  "title": "ጠንካራዋ እናቴ",
+  "english_title": "My Strong Mother",
+  "language": "Amharic",
+  "target_duration": 85,
+  "genre": "Documentary-inspired family tribute",
+  "style": "Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment",
+  "aspect_ratios": ["9:16", "16:9"],
+  "target_audience": "General audiences, families, young people, and international audiences",
+  "purpose": "To celebrate the strength, sacrifices, love, and contribution of rural Ethiopian mothers.",
+  "central_message": "Rural mothers deserve to be seen, heard, respected, and celebrated for their hard work and contribution to their children's futures.",
+  "visual_consistency": {
+    "character": "Maintain one consistent representation of the mother throughout all shots.",
+    "environment": "Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas.",
+    "lighting": "Natural warm lighting with earthy colors.",
+    "disclosure": "AI-generated scenes must be disclosed as AI-generated representations, not documentary photographs."
+  },
+  "shots": [
+    {
+      "id": "shot_01",
+      "duration": 7,
+      "narration": "ጠንካራዋ እናቴ…",
+      "image_prompt": "A wide cinematic view of a rural Ethiopian village at sunrise, traditional houses, distant green hills, warm golden morning light, peaceful atmosphere, documentary realism, natural earthy colors.",
+      "motion_prompt": "Slow cinematic camera push-in toward the village, gentle morning mist and subtle natural environmental movement.",
+      "music_cue": "Soft piano with gentle Ethiopian instrumental atmosphere, peaceful and reflective.",
+      "shot_reason": "Introduces the rural setting and establishes the emotional tone of the film."
+    },
+    {
+      "id": "shot_02",
+      "duration": 8,
+      "narration": "ጠንካራዋ እናቴ ሁሌ በጠዋት ቀድማ ተነስታ፣ ለእኛ የምታደርገው ሁሉ ከልቤ ፈጽሞ አይጠፋም።",
+      "image_prompt": "An Ethiopian mother waking early in a modest rural home before sunrise, preparing for her daily responsibilities, authentic traditional home details, natural cinematic lighting, realistic documentary photography.",
+      "motion_prompt": "Slow camera movement from the doorway toward the mother, with subtle natural movements as she begins her day.",
+      "music_cue": "Warm, quiet piano, reflective and intimate.",
+      "shot_reason": "Shows her early mornings and daily dedication to her family."
+    },
+    {
+      "id": "shot_03",
+      "duration": 10,
+      "narration": "የሰጠችኝ ፍቅር፣ የነገረችኝ ምክር፣ የሰጠችኝ ተስፋና የነበራት እረጋታ… ሁሉም በልቤ ውስጥ እንደ ውድ ትዝታ አለ።",
+      "image_prompt": "A loving Ethiopian mother caring for her young child inside a traditional rural home, a tender everyday family moment, authentic clothing, warm natural light, realistic cinematic photography.",
+      "motion_prompt": "Gentle camera push-in toward the mother and child, natural expressions and subtle interaction.",
+      "music_cue": "Tender piano and soft strings, expressing love and nostalgia.",
+      "shot_reason": "Establishes the emotional connection between mother and child."
+    },
+    {
+      "id": "shot_04",
+      "duration": 9,
+      "narration": "እኔን ለማሳደግና ለማስተማር፣ ያልወረደችው ቁልቁለት፣ ያልወጣችው ዳገት የለም።",
+      "image_prompt": "An Ethiopian rural mother walking across steep countryside hills and valleys, carrying everyday belongings, determined expression, expansive landscape, authentic rural environment, cinematic documentary realism.",
+      "motion_prompt": "Slow tracking shot following the mother as she walks, gradually revealing the challenging landscape.",
+      "music_cue": "Gradually building emotional instrumental music, suggesting determination and resilience.",
+      "shot_reason": "Visually represents the challenges and difficulties she overcame."
+    },
+    {
+      "id": "shot_05",
+      "duration": 7,
+      "narration": "የወንድ ሥራ የሴት ሥራ ብላ ሳትለይ፣ ሁሉንም ሥራ በትጋት ትሠራ ነበር።",
+      "image_prompt": "A hardworking Ethiopian rural mother carrying out physically demanding everyday outdoor work, authentic rural tools and surroundings, showing determination and dignity, natural daylight, realistic documentary style.",
+      "motion_prompt": "Slow cinematic pan across the mother working, with natural movements and realistic physical actions.",
+      "music_cue": "Steady, dignified instrumental rhythm, expressing strength and persistence.",
+      "shot_reason": "Shows that she worked hard without limiting herself by traditional gender roles."
+    },
+    {
+      "id": "shot_06",
+      "duration": 6,
+      "narration": "በበግ እረኝነት ረጅም ዘመን አሳልፋለች።",
+      "image_prompt": "An Ethiopian rural mother herding a flock of sheep across open countryside, natural grassland, distant hills, traditional rural clothing, warm daylight, cinematic documentary realism.",
+      "motion_prompt": "Wide tracking shot following the mother and slowly moving flock of sheep, with subtle grass and environmental movement.",
+      "music_cue": "Reflective Ethiopian-inspired instrumental texture, calm and nostalgic.",
+      "shot_reason": "Highlights sheep herding, an important and real part of her life story."
+    },
+    {
+      "id": "shot_07",
+      "duration": 9,
+      "narration": "ከ1ኛ እስከ 12ኛ ክፍል ድረስ እንድማር፣ የዩኒቨርሲቲ ትምህርቴን እንድቀጥል፣",
+      "image_prompt": "A young Ethiopian child studying with schoolbooks and notebooks inside a modest rural home, their mother working nearby and supporting their education, warm natural light, authentic environment, cinematic realism.",
+      "motion_prompt": "Slow camera pan from the schoolbooks and writing materials toward the mother supporting the child.",
+      "music_cue": "Hopeful piano melody beginning to rise, expressing opportunity and encouragement.",
+      "shot_reason": "Connects the mother's sacrifices to her child's educational journey."
+    },
+    {
+      "id": "shot_08",
+      "duration": 9,
+      "narration": "ከምረቃዬ በኋላም ሥራ እስክቀጠር ድረስ በብዙ ነገሮች ስትረዳኝ ነበር።",
+      "image_prompt": "An Ethiopian university graduate holding a graduation certificate while standing proudly beside their mother, authentic family setting, natural expressions, warm golden light, emotional cinematic realism.",
+      "motion_prompt": "Gentle camera push-in toward the mother and graduate, capturing a natural moment of pride and connection.",
+      "music_cue": "Hopeful and uplifting instrumental music, expressing achievement and gratitude.",
+      "shot_reason": "Shows that the mother's support continued through university and after graduation."
+    },
+    {
+      "id": "shot_09",
+      "duration": 8,
+      "narration": "ብዙ ጊዜ የቤተሰቡ ኃላፊነት በእሷ ላይ ነበር። ለልጆቿ ያላት ፍቅር፣ በዝምታ የተሸከመችው ድካም…",
+      "image_prompt": "A close-up of the hands of a hardworking Ethiopian mother resting after a long day, followed by a thoughtful and warm portrait, natural facial expression, authentic rural environment, cinematic documentary style.",
+      "motion_prompt": "Slow close-up of her hands, followed by a gentle dissolve to her face.",
+      "music_cue": "Soft, intimate piano and strings, expressing sacrifice and reflection.",
+      "shot_reason": "Reflects on the responsibilities she carried and the sacrifices she made quietly."
+    },
+    {
+      "id": "shot_10",
+      "duration": 12,
+      "narration": "እናቴ ብዙ ነገሮችን በቃላት አትናገርም፤ ግን በሕይወቷ አሳይታኛለች። ጠንካራዋ እናቴ… ፍቅርሽ እና ትዝታሽ ከልቤ ፈጽሞ አይጠፋም።",
+      "image_prompt": "An adult Ethiopian child standing beside their mother in a rural Ethiopian setting, sharing a warm and genuine embrace, golden-hour light, emotional but natural expressions, cinematic realism.",
+      "motion_prompt": "Slow camera pull-back from the embrace, fade gently to black, then display the film title and AI disclosure.",
+      "music_cue": "Emotional musical resolution with a gentle fade-out.",
+      "shot_reason": "Delivers the emotional tribute and closes the story with love and gratitude."
+    }
+  ],
+  "end_card": {
+    "title": "ጠንካራዋ እናቴ",
+    "subtitle": "My Strong Mother",
+    "disclosure": "Some visuals in this film were generated with AI.",
+    "duration_seconds": 3
+  }
+}

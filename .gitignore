@@ -10,14 +10,17 @@ __pycache__/
 .venv/
 .pytest_cache/
 
-# scratch and bulky intermediates (generated outputs themselves ARE committed, so the run can be inspected)
-outputs/smoke/
-outputs/radio_cut/*.wav
-outputs/final/_work/
-outputs/shots/kaggle_bundle/
-outputs/shots/_import/
-outputs/music/kaggle_bundle/
-outputs/music/_import/
-outputs/keyframes/refs/small/
+# scratch and bulky intermediates (generated media itself IS committed, so the run can be inspected)
+logs/smoke/
+output/radio_cut/*.wav
+output/_work/
+assets/video/kaggle_bundle/
+assets/video/_import/
+assets/references/small/
+audio/music/kaggle_bundle/
+audio/music/_import/
 *.zip
 .DS_Store
+
+# real people's photos: private, never committed (see ETHICS.md)
+assets/references/*_photo.*
