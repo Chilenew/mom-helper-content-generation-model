@@ -1,0 +1,14 @@
+{
+  "input_hash": "ed6459684f3ca44f",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "She spent many years herding sheep.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:09.180210+00:00"
+}

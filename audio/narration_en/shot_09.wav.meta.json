@@ -1,0 +1,14 @@
+{
+  "input_hash": "8d4b31bc2145144a",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "So often the weight of the family rested on her. Her love for her children, the tiredness she carried in silence…",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:15.400621+00:00"
+}

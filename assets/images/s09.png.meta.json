@@ -1,0 +1,13 @@
+{
+  "input_hash": "a2bfb74f53ec7ffc",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "wide shot at golden sunset, the grown child seen from behind walking up the winding dirt path toward the village and the warka tree, canvas bag over one shoulder, long shadows. The narrator: young adult from the city, seen only from behind or as hands, dark green jacket, canvas travel bag over one shoulder. Style: warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame. No text, letters or writing anywhere in the image.",
+    "seed": 10009,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": true
+  },
+  "written_at": "2026-11-25T12:41:44.456099+00:00"
+}

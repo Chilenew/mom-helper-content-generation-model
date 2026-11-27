@@ -42,7 +42,7 @@
 
 ## 4. User test 1: the radio cut
 
-**What was shown:** `outputs/radio_cut/radio_cut.mp4` (narration + placeholder music on black, English subtitles), storyboard version `0.1.0`.
+**What was shown:** `output/radio_cut/radio_cut.mp4` (narration + placeholder music on black, English subtitles), storyboard version `0.1.0`.
 **How:** _(in person / Slack / WhatsApp)_ **Date:** _(fill in)_
 
 Questions asked:
@@ -67,7 +67,7 @@ Questions asked:
 
 ## 5. User test 2: the near-final cut
 
-**What was shown:** `outputs/final/film_9x16.mp4`, storyboard version _(x.y.z)_. **Date:** _(fill in)_
+**What was shown:** `output/film_vertical.mp4`, storyboard version _(x.y.z)_. **Date:** _(fill in)_
 
 | # | Who | Story in one sentence | Feeling at the end | What didn't work |
 |---|---|---|---|---|

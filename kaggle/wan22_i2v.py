@@ -1,7 +1,7 @@
 """Wan 2.2 TI2V-5B image-to-video on Kaggle (GPU T4 x2). Paste into a Kaggle notebook cell, or upload and run:
     !python /kaggle/input/<your-code-dataset>/wan22_i2v.py
 
-Inputs : the dataset made from outputs/shots/kaggle_bundle.zip (jobs.json + keyframes/), attached to the notebook
+Inputs : the dataset made from assets/video/kaggle_bundle.zip (jobs.json + keyframes/), attached to the notebook
 Outputs: /kaggle/working/wan_output/<shot>.mp4 + <shot>.json + kaggle_runs.jsonl, zipped to wan_output.zip
 
 Notebook settings: Accelerator = GPU T4 x2, Internet = On (to download the model, ~34 GB on first run).
@@ -26,7 +26,7 @@ MAX_MINUTES = float(os.environ.get("MAX_MINUTES", "600"))
 def find_jobs():
     hits = glob.glob("/kaggle/input/**/jobs.json", recursive=True)
     if not hits:
-        sys.exit("jobs.json not found: attach the dataset made from outputs/shots/kaggle_bundle.zip")
+        sys.exit("jobs.json not found: attach the dataset made from assets/video/kaggle_bundle.zip")
     return hits[0]
 
 
@@ -83,7 +83,7 @@ def worker(gpu, n_workers):
                "stage": "shots", "shot_id": sid, "model": model_id, "provider": "kaggle_t4x2", "params": params,
                "seed": job["seed"], "latency_s": round(latency, 3), "gpu_minutes": round(latency / 60, 2),
                "cost_usd": 0.0, "status": status, "attempt": 1,
-               "output": f"outputs/shots/{sid}.mp4" if status == "ok" else None, "error": error}
+               "output": f"assets/video/{sid}.mp4" if status == "ok" else None, "error": error}
         with open(log_path, "a") as f:
             f.write(json.dumps(rec) + "\n")
         print(f"[gpu{gpu}] {sid}: {status} in {latency / 60:.1f} min {error or ''}", flush=True)
@@ -107,7 +107,7 @@ def main():
             out.write(open(f).read())
     subprocess.run(["zip", "-qrj", "/kaggle/working/wan_output.zip", OUT], check=True)
     print("done: download /kaggle/working/wan_output.zip, then on your machine:\n"
-          "  python pipeline/shots.py import --from wan_output.zip")
+          "  python src/generate_video.py import --from wan_output.zip")
 
 
 if __name__ == "__main__":

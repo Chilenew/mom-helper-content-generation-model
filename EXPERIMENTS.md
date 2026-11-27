@@ -1,6 +1,6 @@
 # Experiments
 
-Each entry: **hypothesis → change → result → decision**, with evidence (log lines in `runs.jsonl`, file paths, measured numbers, or what testers said). Change one thing at a time and keep the seed fixed when comparing prompts.
+Each entry: **hypothesis → change → result → decision**, with evidence (log lines in `logs/runs.jsonl`, file paths, measured numbers, or what testers said). Change one thing at a time and keep the seed fixed when comparing prompts.
 
 Entries marked _planned_ are designed but not yet run. Replace the plan with what actually happened, including when the hypothesis was wrong.
 
@@ -12,7 +12,7 @@ Entries marked _planned_ are designed but not yet run. Replace the plan with wha
 - **Date:**
 - **Hypothesis:** I expect … because …
 - **Change:** (one variable; everything else fixed: seed, model, prompt)
-- **Evidence:** `runs.jsonl` run_id …, files …, measurements …
+- **Evidence:** `logs/runs.jsonl` run_id …, files …, measurements …
 - **Result:**
 - **Decision:** kept / reverted / follow-up
 
@@ -44,7 +44,7 @@ Entries marked _planned_ are designed but not yet run. Replace the plan with wha
 ## E05 — Wan 2.2 base vs. distilled FastWan on a T4 (_planned_)
 - **Hypothesis:** FastWan2.2-TI2V-5B at 4 steps is about 5–8× faster than the base model at 30 steps on a T4, with acceptable quality for slow shots.
 - **Change:** `MODEL_ID` and `STEPS` in the Kaggle notebook for s06 and s07.
-- **Evidence:** `gpu_minutes` in `runs.jsonl`; side-by-side clips.
+- **Evidence:** `gpu_minutes` in `logs/runs.jsonl`; side-by-side clips.
 - **Result:**
 
 ## E06 — Motion prompt: "fixed camera" vs. "camera pushes in gently" (_planned_)
@@ -78,6 +78,6 @@ Entries marked _planned_ are designed but not yet run. Replace the plan with wha
 
 ## E12 — Ceiling: Afaan Oromo narration (_planned_)
 - **Hypothesis:** Gemini TTS handles Afaan Oromo less well than Amharic, especially names and long vowels.
-- **Change:** `python pipeline/script.py translate --lang om`, a native speaker checks it, then narration into a separate output folder.
+- **Change:** `python src/pipeline.py script translate --lang om`, a native speaker checks it, then narration into a separate output folder.
 - **Evidence:** a native speaker's notes per line; where exactly it fails (log in FAILURES.md).
 - **Result:**

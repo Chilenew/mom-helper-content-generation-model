@@ -1,0 +1,14 @@
+{
+  "input_hash": "79cf767ed9f6d2ec",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "and even after I graduated, until I found work, she helped me in so many ways.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:13.152240+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "shot_01": {
+    "planned_s": 7,
+    "narration_s": 2.33,
+    "headroom_s": 4.67,
+    "fits": true
+  },
+  "shot_02": {
+    "planned_s": 8,
+    "narration_s": 6.96,
+    "headroom_s": 1.04,
+    "fits": true
+  },
+  "shot_03": {
+    "planned_s": 10,
+    "narration_s": 9.19,
+    "headroom_s": 0.81,
+    "fits": true
+  },
+  "shot_04": {
+    "planned_s": 9,
+    "narration_s": 5.9,
+    "headroom_s": 3.1,
+    "fits": true
+  },
+  "shot_05": {
+    "planned_s": 7,
+    "narration_s": 5.26,
+    "headroom_s": 1.74,
+    "fits": true
+  },
+  "shot_06": {
+    "planned_s": 6,
+    "narration_s": 3.79,
+    "headroom_s": 2.21,
+    "fits": true
+  },
+  "shot_07": {
+    "planned_s": 9,
+    "narration_s": 5.95,
+    "headroom_s": 3.05,
+    "fits": true
+  },
+  "shot_08": {
+    "planned_s": 9,
+    "narration_s": 5.62,
+    "headroom_s": 3.38,
+    "fits": true
+  },
+  "shot_09": {
+    "planned_s": 8,
+    "narration_s": 7.13,
+    "headroom_s": 0.87,
+    "fits": true
+  },
+  "shot_10": {
+    "planned_s": 12,
+    "narration_s": 10.46,
+    "headroom_s": 1.54,
+    "fits": true
+  }
+}

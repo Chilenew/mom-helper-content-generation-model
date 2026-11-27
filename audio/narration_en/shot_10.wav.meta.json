@@ -1,0 +1,14 @@
+{
+  "input_hash": "96f55b3c957c4123",
+  "inputs": {
+    "provider": "edge_tts",
+    "voice": "en-KE-ChilembaNeural",
+    "params": {
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    },
+    "text": "My mother does not say much in words, but she showed me with her life. My strong mother… your love and your memory will never leave my heart.",
+    "dry_run": false
+  },
+  "written_at": "2026-11-26T15:04:18.240623+00:00"
+}

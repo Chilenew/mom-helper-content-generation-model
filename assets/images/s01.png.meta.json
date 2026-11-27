@@ -1,0 +1,13 @@
+{
+  "input_hash": "febe2d9188faaf60",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "extreme wide shot at early morning, small Ethiopian highland village of round thatched tukuls on green hills, one huge old warka fig tree beside a winding dirt path, thin smoke rising from a hut, soft mist in the valley. Style: warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame. No text, letters or writing anywhere in the image.",
+    "seed": 10001,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": true
+  },
+  "written_at": "2026-11-25T12:41:43.947135+00:00"
+}

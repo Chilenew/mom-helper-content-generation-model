@@ -1,0 +1,13 @@
+{
+  "input_hash": "41a8e2a10b1b28ae",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "medium shot under the warka tree, Selam in profile holding an open folded letter and reading aloud, the mother sitting beside her listening, dappled shade, the letter shows no readable writing. Emaye: Ethiopian woman in her late fifties, warm dark brown skin, kind tired eyes, grey hair at the temples, white cotton netela shawl with a thin green-yellow-red woven border, long simple white dress. Selam: Ethiopian girl about twelve years old, hair in neat cornrow plaits, faded blue school uniform, carries two exercise books, seen from behind or in profile. Style: warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame. No text, letters or writing anywhere in the image.",
+    "seed": 10005,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": true
+  },
+  "written_at": "2026-11-25T12:41:44.177578+00:00"
+}

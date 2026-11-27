@@ -1,0 +1,13 @@
+{
+  "input_hash": "ac3adba23a664fe3",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "close-up inside a dim tukul, the mother's hands opening an old dented tin box filled with many folded letters tied with string, warm light from the doorway. Emaye: Ethiopian woman in her late fifties, warm dark brown skin, kind tired eyes, grey hair at the temples, white cotton netela shawl with a thin green-yellow-red woven border, long simple white dress. Style: warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame. No text, letters or writing anywhere in the image.",
+    "seed": 10007,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": true
+  },
+  "written_at": "2026-11-25T12:41:44.314481+00:00"
+}

@@ -1,0 +1,311 @@
+{
+  "_comment": "Pipeline settings that are not part of the story: models, seeds, characters, subtitles, music cues, export. The story itself is storyboard.json. src/validate.py merges the two.",
+  "version": "0.2.1",
+  "language": {
+    "narration": "am",
+    "subtitles": "en"
+  },
+  "negative_prompt": "text, letters, writing, words, watermark, logo, extra fingers, deformed hands, distorted face, cartoon, illustration, anime, oversaturated, harsh shadows",
+  "models": {
+    "script": {
+      "name": "gemini-3.8-flash",
+      "provider": "gemini_api"
+    },
+    "keyframes": {
+      "name": "@cf/black-forest-labs/flux-2-klein-4b",
+      "provider": "cloudflare_workers_ai",
+      "params": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "shots": {
+      "name": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "provider": "kaggle_t4x2",
+      "params": {
+        "width": 512,
+        "height": 512,
+        "num_frames": 121,
+        "fps": 24,
+        "num_inference_steps": 30,
+        "guidance_scale": 5.0,
+        "negative_prompt": "blurry, distorted face, extra fingers, flicker, text, watermark, fast motion"
+      }
+    },
+    "music": {
+      "name": "acestep-v15-turbo",
+      "provider": "kaggle_t4x2",
+      "params": {
+        "lm_model": "acestep-5Hz-lm-0.6B",
+        "inference_steps": 8,
+        "thinking": false
+      }
+    },
+    "narration": {
+      "name": "edge-tts",
+      "provider": "edge_tts",
+      "params": {
+        "rate": "-12%",
+        "pitch": "+0Hz"
+      }
+    }
+  },
+  "characters": [
+    {
+      "id": "mother",
+      "name": "Enat (the mother)",
+      "description": "Ethiopian Habesha woman in her late forties with a deep dark brown complexion, sun-weathered dark skin from years of outdoor work, East African facial features, strong weathered hands, kind steady eyes, white cotton netela shawl with a thin woven border draped over her hair and shoulders, simple long dress in muted earth tones",
+      "reference_prompt": "single full-length portrait photograph, front view, one person only; Ethiopian Habesha woman in her late forties with a deep dark brown complexion, sun-weathered dark skin from years of outdoor work, East African facial features, strong weathered hands, kind steady eyes, white cotton netela shawl with a thin woven border draped over her hair and shoulders, simple long dress in muted earth tones, standing in a rural Ethiopian village, natural warm light",
+      "seed": 1301,
+      "show_face": true,
+      "real_person": false,
+      "reference_image": "assets\\references\\mother.png"
+    },
+    {
+      "id": "young_child",
+      "name": "The child (young)",
+      "description": "Ethiopian Habesha boy about seven years old, dark brown skin, East African facial features, short tightly coiled black hair, simple faded khaki school clothes",
+      "reference_prompt": "single full-length portrait photograph, front view, one person only; Ethiopian Habesha boy about seven years old, dark brown skin, East African facial features, short tightly coiled black hair, simple faded khaki school clothes, standing in a rural Ethiopian village, natural warm light",
+      "seed": 2202,
+      "show_face": true,
+      "real_person": false,
+      "reference_image": "assets\\references\\young_child.png"
+    },
+    {
+      "id": "grown_child",
+      "name": "The child (grown, the narrator)",
+      "description": "Ethiopian Habesha young man in his mid twenties, dark brown skin, East African facial features, short tightly coiled black hair, slim build, neat white shirt and dark trousers",
+      "reference_prompt": "single full-length portrait photograph, front view, one person only; Ethiopian Habesha young man in his mid twenties, dark brown skin, East African facial features, short tightly coiled black hair, slim build, neat white shirt and dark trousers, standing in a rural Ethiopian village, natural warm light",
+      "seed": 3303,
+      "show_face": true,
+      "real_person": false,
+      "reference_image": "assets\\references\\grown_child.png"
+    }
+  ],
+  "narration_settings": {
+    "voice": "am-ET-AmehaNeural",
+    "style_instruction": "Gemini only (unused with Azure): warm, tender and unhurried, like a grown child paying tribute to their mother. Azure pacing is set by models.narration.params.",
+    "words_per_second_estimate": 1.6,
+    "english_voice": {
+      "voice": "en-KE-ChilembaNeural",
+      "rate": "+5%",
+      "pitch": "+0Hz"
+    }
+  },
+  "music": {
+    "candidates": 3,
+    "chosen_candidate": null,
+    "cues": [
+      {
+        "id": "cue_dawn",
+        "start_shot": "shot_01",
+        "end_shot": "shot_03",
+        "caption": "instrumental, soft piano with gentle Ethiopian instrumental atmosphere, tender soft strings, warm, peaceful, reflective, intimate, nostalgic",
+        "bpm": 66,
+        "key": "D major",
+        "instrumental": true,
+        "purpose": "Set a peaceful, reflective tone for her mornings and her love.",
+        "seed": 4401
+      },
+      {
+        "id": "cue_strength",
+        "start_shot": "shot_04",
+        "end_shot": "shot_06",
+        "caption": "instrumental, gradually building emotional score, steady dignified rhythm, Ethiopian-inspired texture with soft masinko and krar, determined, resilient, calm",
+        "bpm": 76,
+        "key": "D minor",
+        "instrumental": true,
+        "purpose": "Carry her determination and hard work without competing with the voice.",
+        "seed": 4402
+      },
+      {
+        "id": "cue_hope",
+        "start_shot": "shot_07",
+        "end_shot": "shot_08",
+        "caption": "instrumental, hopeful rising piano melody, warm strings, uplifting, encouraging, sense of achievement and gratitude",
+        "bpm": 80,
+        "key": "D major",
+        "instrumental": true,
+        "purpose": "Lift as her sacrifice turns into the child's education and graduation.",
+        "seed": 4403
+      },
+      {
+        "id": "cue_tribute",
+        "start_shot": "shot_09",
+        "end_shot": "shot_10",
+        "caption": "instrumental, soft intimate piano and strings, emotional resolution, tender, gentle fade-out",
+        "bpm": 64,
+        "key": "D major",
+        "instrumental": true,
+        "purpose": "Resolve the tribute warmly and fade into the end card.",
+        "seed": 4404
+      }
+    ],
+    "ducking": {
+      "threshold": 0.02,
+      "ratio": 6,
+      "attack_ms": 300,
+      "release_ms": 1500
+    },
+    "chosen_reason": "",
+    "track": {
+      "file": "audio/music/library/satie_gymnopedie_1_alciatore.ogg",
+      "title": "Gymnopédie No. 1 (Lent et douloureux)",
+      "composer": "Erik Satie (1888)",
+      "performer": "Robin Alciatore",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg",
+      "start_s": 2.2,
+      "fade_in_s": 2,
+      "fade_out_s": 4,
+      "gain_db": 0
+    }
+  },
+  "export": {
+    "fps": 24,
+    "draft_resolution": "480p",
+    "final_resolution": "720p",
+    "loudness_lufs": -14,
+    "true_peak_db": -1,
+    "min_total_s": 60,
+    "max_total_s": 90
+  },
+  "shots": {
+    "shot_01": {
+      "shot_size": "extreme_wide",
+      "characters": [],
+      "keyframe_seed": 10001,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20001
+      },
+      "subtitle_en": "My strong mother…",
+      "music_cue": "cue_dawn"
+    },
+    "shot_02": {
+      "shot_size": "medium",
+      "characters": [
+        "mother"
+      ],
+      "keyframe_seed": 10002,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20002
+      },
+      "subtitle_en": "My strong mother, always up before dawn. Everything she did for us will never leave my heart.",
+      "music_cue": "cue_dawn"
+    },
+    "shot_03": {
+      "shot_size": "medium",
+      "characters": [
+        "mother",
+        "young_child"
+      ],
+      "keyframe_seed": 10003,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20003
+      },
+      "subtitle_en": "The love she gave me, her advice, the hope she gave me, her calm… all of it lives in my heart as a precious memory.",
+      "music_cue": "cue_dawn"
+    },
+    "shot_04": {
+      "shot_size": "wide",
+      "characters": [
+        "mother"
+      ],
+      "keyframe_seed": 10004,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20004
+      },
+      "subtitle_en": "To raise me and send me to school, there was no slope she did not go down, no hill she did not climb.",
+      "music_cue": "cue_strength"
+    },
+    "shot_05": {
+      "shot_size": "medium",
+      "characters": [
+        "mother"
+      ],
+      "keyframe_seed": 10005,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20005
+      },
+      "subtitle_en": "She never divided work into men's work and women's work. She did it all, tirelessly.",
+      "music_cue": "cue_strength"
+    },
+    "shot_06": {
+      "shot_size": "wide",
+      "characters": [
+        "mother"
+      ],
+      "keyframe_seed": 10006,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20006
+      },
+      "subtitle_en": "She spent many years herding sheep.",
+      "music_cue": "cue_strength"
+    },
+    "shot_07": {
+      "shot_size": "medium",
+      "characters": [
+        "mother",
+        "young_child"
+      ],
+      "keyframe_seed": 10107,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20007
+      },
+      "subtitle_en": "So that I could study from grade 1 to grade 12, and go on to university,",
+      "music_cue": "cue_hope"
+    },
+    "shot_08": {
+      "shot_size": "medium",
+      "characters": [
+        "mother",
+        "grown_child"
+      ],
+      "keyframe_seed": 10008,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20008
+      },
+      "subtitle_en": "and even after I graduated, until I found work, she helped me in so many ways.",
+      "music_cue": "cue_hope"
+    },
+    "shot_09": {
+      "shot_size": "close_up",
+      "characters": [
+        "mother"
+      ],
+      "keyframe_seed": 10009,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20009
+      },
+      "subtitle_en": "So often the weight of the family rested on her. Her love for her children, the tiredness she carried in silence…",
+      "music_cue": "cue_tribute",
+      "notes": "keyframe_prompt overrides the story: the story asks for hands then a portrait, which the image model drew as a split image. Hands only here; split into two shots if the face is needed.",
+      "keyframe_prompt": "A single close-up photograph of the weathered hands of a hardworking Ethiopian mother with deep brown skin, resting in her lap after a long day, the edge of her white netela shawl visible, authentic rural environment, warm natural light, cinematic documentary style, one image, no split screen"
+    },
+    "shot_10": {
+      "shot_size": "medium",
+      "characters": [
+        "mother",
+        "grown_child"
+      ],
+      "keyframe_seed": 10010,
+      "motion": {
+        "mode": "i2v",
+        "seed": 20010
+      },
+      "subtitle_en": "My mother does not say much in words, but she showed me with her life. My strong mother… your love and your memory will never leave my heart.",
+      "music_cue": "cue_tribute",
+      "motion_prompt": "Slow camera pull-back from the embrace, natural gentle movement.",
+      "notes": "motion_prompt overrides the story: fade to black, title and AI disclosure are added at assembly (end card), not generated by Wan."
+    }
+  }
+}

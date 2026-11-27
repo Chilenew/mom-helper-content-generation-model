@@ -1,0 +1,13 @@
+{
+  "input_hash": "d5ae39f1fd0e3287",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "wide shot, the mother walking along the dirt path toward the huge warka tree, the girl Selam sitting on a stone under the tree seen from behind with exercise books on her lap, dappled sunlight. Emaye: Ethiopian woman in her late fifties, warm dark brown skin, kind tired eyes, grey hair at the temples, white cotton netela shawl with a thin green-yellow-red woven border, long simple white dress. Selam: Ethiopian girl about twelve years old, hair in neat cornrow plaits, faded blue school uniform, carries two exercise books, seen from behind or in profile. Style: warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame. No text, letters or writing anywhere in the image.",
+    "seed": 10004,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": true
+  },
+  "written_at": "2026-11-25T12:41:44.111877+00:00"
+}

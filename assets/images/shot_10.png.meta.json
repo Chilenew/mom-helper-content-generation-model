@@ -1,0 +1,16 @@
+{
+  "input_hash": "c4b4fb4da252fdb2",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "An adult Ethiopian child standing beside their mother in a rural Ethiopian setting, sharing a warm and genuine embrace, golden-hour light, emotional but natural expressions, cinematic realism.. Enat: Ethiopian Habesha woman in her late forties with a deep dark brown complexion, sun-weathered dark skin from years of outdoor work, East African facial features, strong weathered hands, kind steady eyes, white cotton netela shawl with a thin woven border draped over her hair and shoulders, simple long dress in muted earth tones. The child: Ethiopian Habesha young man in his mid twenties, dark brown skin, East African facial features, short tightly coiled black hair, slim build, neat white shirt and dark trousers. Reference images: image 0 shows Enat, image 1 shows The child; keep each person's face, clothing and colours identical. Each person appears exactly once; one single scene, not a collage or reference sheet. Style: Cinematic realism, warm, emotional, nostalgic, authentic rural Ethiopian environment, Authentic rural Ethiopian countryside, traditional homes, hills, and sheep-grazing areas, Natural warm lighting with earthy colors. No text, letters or writing anywhere in the image.",
+    "seed": 10010,
+    "w": 1024,
+    "h": 1024,
+    "refs": [
+      "0ed9e4f59c2f66da",
+      "91a3de80fbc08ccc"
+    ],
+    "dry": false
+  },
+  "written_at": "2026-11-26T14:56:05.150523+00:00"
+}

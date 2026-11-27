@@ -1,0 +1,13 @@
+{
+  "input_hash": "2f10629759475551",
+  "inputs": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "prompt": "medium shot at night inside the tukul, the mother sitting alone on a low stool beside a small kerosene lamp, the closed tin box on her lap, warm orange lamplight and deep shadows. Emaye: Ethiopian woman in her late fifties, warm dark brown skin, kind tired eyes, grey hair at the temples, white cotton netela shawl with a thin green-yellow-red woven border, long simple white dress. Style: warm hand-painted illustration, soft natural light, earthy browns, ochres and deep greens, gentle film grain, Ethiopian highland village, calm and intimate, subject centred in frame. No text, letters or writing anywhere in the image.",
+    "seed": 10008,
+    "w": 1024,
+    "h": 1024,
+    "refs": [],
+    "dry": true
+  },
+  "written_at": "2026-11-25T12:41:44.384491+00:00"
+}
